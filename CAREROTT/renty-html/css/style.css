@@ -457,8 +457,8 @@ input[type="radio"] {
 }
 .site-logo {
 	height: 59px;
-	width: 59px;
-	opacity: 0.3;
+	/* width: 59px; */
+	/* opacity: 0.3; */
 	display: inline;
 	margin-bottom: -20px;
 	margin-right: 4px;
