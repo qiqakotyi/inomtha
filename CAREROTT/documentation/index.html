@@ -1,0 +1,274 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Renty - Car Rental &amp; Booking HTML5 Template</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Renty - Car Rental &amp; Responsive HTML5 Template&rdquo; Documentation by &ldquo;BestWebHolding&rdquo; v1.3</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Renty - Car Rental &amp; Responsive HTML5 Template&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-7 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Modified: 14/08/2017<br>
+					By: BestWebHolding<br>
+					Email: <a href="mailto:support@bestwebsoft.zendesk.com">support@bestwebsoft.zendesk.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-11 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="https://themeforest.net/user/bestwebholding">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#generalInformation">General Information</a></li>
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#contactPage">Contact Page Options</a></li>
+			<li><a href="#psdFiles">PSD Files</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>		
+		
+		<hr>
+		
+		<h3 id="generalInformation"><strong>1) General Information</strong> - <a href="#toc">top</a></h3>
+		
+		<p><strong>Renty</strong> is a Car Rental &amp; Booking HTML5 Template designed for people who are using online services to rent and book a car for their vacation or business purposes. It consists of 10 built-in pages. This template is developed on amazing <a href="http://themeforest.net/item/renty-car-rental-booking-psd-template/4153222?ref=bestwebholding">"Renty - Car Rental &amp; Booking PSD Template"</a> basis created by <a href="http://themeforest.net/user/bestwebsoft?ref=bestwebholding">BestWebSoft</a>.
+		</p>
+
+		<p><strong>Pages:</strong></p>
+		<ul>
+			<li>Home v.1</li>
+			<li>Home v.2</li>
+			<li>Home v.3</li>
+			<li>Choose car</li>
+			<li>Choose extras</li>
+			<li>Review and book</li>
+			<li>Shortcodes</li>
+			<li>Sign in</li>
+			<li>Register</li>
+			<li>Forgot password</li>
+			<li>FAQ</li>
+		</ul>
+
+		<p><strong>Features:</strong></p>
+		<ul>
+			<li>Responsive Layout</li>
+			<li>HTML5 and CSS3 Tableless</li>
+			<li>Clean and Modern Interface</li>
+			<li>Well-structured Code</li>
+			<li>Crossbrowser compatible</li>
+			<li>Content slider</li>
+		</ul>
+		
+		<hr>
+
+		<h3 id="htmlStructure"><strong>2) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>The general template structure is mostly the same throughout the template. Slider exists only for homepages ( &ltdiv id="slider"> ). Progress bar ( &ltdiv id="progress-bar"> ) exists only for 'choose car' page, 'choose extras' page, 'review book' page. Here is the general structure:</p>
+
+		<pre id="normalpages" class="prettyprint lines">
+
+	&ltbody>
+		&ltdiv id="conteiner">
+			&ltdiv id="branding">
+				&ltdiv id="branding-content">
+					&ltdiv class="menus">	
+						{select language and select country}							
+					&lt/div>
+					&ltdiv class="title-content">
+						{title and thumb}							
+					&lt/div>					
+					&ltdiv class="access-content">
+						{main menu}
+					&lt/div>&lt!-- .access -->			
+					&ltdiv class="member">
+						{signin and register button}
+					&lt/div>
+				&lt/div>&lt!-- #branding-content -->
+				&ltdiv class="clear">&lt/div>
+			&lt/div>&lt!-- #branding -->
+			&ltdiv id="slider">
+				&ltdiv id="slider-img">
+					&ltul class="slides">
+					    {slider images}
+					&lt/ul>
+				&lt/div>
+				&ltdiv id="slider-content">
+					&ltdiv id="slider-post">
+						&ltdiv class="post">
+							{slider post}
+						&lt/div>
+						&ltdiv id="slider-front-img">	
+							{slider additional image}
+						&lt/div>
+					&lt/div>
+					&ltform id="slider-form" class="main-form" action="04-choose-car.html">
+						{slider form}
+					&lt/form>		
+				&lt/div>			
+			&lt/div>&lt!-- #slider -->
+			&ltdiv id="progress-bar">
+				{progress-bar}
+			&lt/div>	
+			&ltdiv id="main">
+				{main content}
+			&lt/div>
+			&ltdiv class="clear">&lt/div>
+			&ltfooter id="footer">			
+				{footer content}
+			&lt/footer>&lt!--end:footer-->
+		&lt/div>&lt!--end:conteiner-->
+	&lt/body>
+		</pre>	
+        <div class="separater"></div>
+
+		
+		<p>Open the <strong>html</strong> folder and your will find all HTML, CSS and JS files that you'll need to customize and add your content.</p>
+
+		<p>This template has 4 colors for buttons - you can see them on the shortcode page. If you want to change the color of button, You have to open the desired file, find a place where there is a button, and replace the word "orange_button" (if it is the orange button) or "blue_button" (if it is the blue button) with one of this: "orange_button", "green_button", "blue_button", "grey_button".</p>
+
+		<p>All images are replaced with placeholders from http://placehold.it. If You want to add your image instead of it, You have to add your image into the folder "images". Then you have to open the desired file, find the place with placeholder and replace src tag with the path to your image. For example:</p>
+		<pre id="normalpages" class="prettyprint lines">
+			&ltimg src="http://placehold.it/2000x340" alt="" />
+		</pre>	
+        <div class="separater"></div>
+        <p>replace with:</p>
+		<pre id="normalpages" class="prettyprint lines">
+		    &ltimg src="images/your_new_image.jpg" alt="" />
+		</pre>
+
+		<p>The slider on the homepage has 3 images. If You want to add or remove the slide, You have to open the desired file, find the place:</p>
+		<pre id="normalpages" class="prettyprint lines">
+			&ltdiv id="slider-img">
+				&ltul class="slides">
+				    &ltli>&ltimg src="http://placehold.it/2000x340" alt="" />&lt/li>
+				    &ltli>&ltimg src="http://placehold.it/2000x340" alt="" />&lt/li>
+				    &ltli>&ltimg src="http://placehold.it/2000x340" alt="" />&lt/li>
+				&lt/ul>
+			&lt/div>	
+		</pre>	
+        <div class="separater"></div>
+        <p>And then you should delete or add a line</p>
+		<pre id="normalpages" class="prettyprint lines">
+		    &ltli>&ltimg src="http://placehold.it/2000x340" alt="" />&lt/li>
+		</pre>
+		<hr>
+
+		<h3 id="cssFiles"><strong>3) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I'm using several CSS files in this theme.</p>
+		<ol>
+			<li><strong>css/style.css</strong> - is a common file with all main styles, separated for sections, this is where you should add your custom code and edit the existing one.</li>
+			<li><strong>css/jquery.slider.min.css</strong> - stylesheet for "slider-range" jQuery plugin.</li>
+			<li><strong>css/jquery-ui.css</strong> - stylesheet for DatePicker jQuery plugin.</li>
+			<li><strong>css/css_ie.css</strong> - stylesheets for fixing behavior of old IE browsers.</li>
+		</ol>
+
+		<h6>css/style.css</h6>
+		<p>Main CSS file in this theme is style.css that contains all specific stylings for the theme. The file is separated into 13 sections using labels as follows:</p> 
+		<pre class="prettyprint lines">
+		1.      Default browser CSS
+		2.      Fonts
+		3.      Global Elements
+		4.      Custom Form elements
+		5.      Header Elements
+		6.      Main Structure
+		7.      Slider Elements
+		8.      Main Content
+		9.      Content for "sign up" block
+		10.     Sidebar and widgets
+		11.     Sign-in/Register/Reset-password
+		12.     Pagination for pages
+		13.     Footer content
+		</pre>
+
+		<p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited. If you're using firefox I'd suggest using Firebug, it's really awesome. <a href="https://getfirebug.com/">Get firebug</a></p>  
+
+
+		<hr>
+		
+		<h3 id="javascript"><strong>4) JavaScript</strong> - <a href="#toc">top</a></h3>
+		<p>This theme imports following Javascript files.</p>
+		
+		<ol>
+			<li><strong>html5.js</strong> - Javascript for IE</li>
+			<li><strong>jquery-1.11.3.min.js</strong> - Javascript library</li>
+			<li><strong>jquery-migrate-1.2.1.min.js</strong> - jQuery migrate</li>
+			<li><strong>jquery-ui.js</strong> - jQuery UI</li>
+			<li><strong>jquery.blueberry.js</strong> - Homepage slider</li>
+			<li><strong>jquery.slider.min.js</strong> - add slider-range</li>
+			<li><strong>custom-form-elements.js</strong> - custom checkboxes and radio buttons</li>
+			<li><strong>jquery.selectbox-0.2.min.js</strong> - custom selectbox</li>
+			<li><strong>placeholder_ie.js</strong> - add placeholder for IE</li>
+			<li><strong>script.js</strong> - contains all custom script</li>
+			<li><strong>pie.js</strong> - custom script to draw circle percentage</li>
+		</ol>
+
+		<p>Except <strong>script.js</strong> and <strong>pie.js</strong>, all of the plugins are packed, so you don't need to edit anything in these files manually. The only necessary thing to know is how to call the method. You can refer to the website of the plugin author I listed in the <strong>"Sources and Credits"</strong> section  to learn more about them.</p>  
+		<p><strong>script.js</strong> contains custom scripts and scripts to call method for above plugin.</p>
+		
+		<hr>
+
+		<h3 id="psdFiles"><strong>5) PSD Files</strong> - <a href="#toc">top</a></h3>
+		
+		<p>PSD files are not included into this release. You can purchase original <a href="http://themeforest.net/item/renty-car-rental-booking-psd-template/4153222?ref=bestwebholding">"Renty - Car Rental &amp; Booking PSD Template"</a> created by <a href="https://bestwebsoft.com/">BestWebSoft</a> and edit all necessary widgets, customize the layout, etc.</p>
+		
+		<hr>
+		
+		<h3 id="credits"><strong>6) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I've used the following images, icons, js, css files as listed.</p>
+		<ul>
+			<li><a href="http://themeforest.net/item/renty-car-rental-booking-psd-template/4153222?ref=bestwebholding">Renty - Car Rental &amp; Booking PSD Template</a></li>
+			<li><a target="_blank" href="http://www.jquery.com">jQuery</a></li>
+			<li><a href="http://marktyrrell.com/labs/blueberry/" target="_blank">Slider</a></li>
+			<li><a href="http://www.bulgaria-web-developers.com/projects/javascript/selectbox/" target="_blank">jQuery Selectbox plugin</a></li>
+			<li><a href="http://webcloud.se" target="_blank">Placeholder plugin for jQuery</a></li>			
+			<li><a href="http://egorkhmelev.github.io/jslider/" target="_blank">Slider-range</a></li>
+			<li><a href="http://ryanfait.com/resources/custom-checkboxes-and-radio-buttons" target="_blank">custom checkboxes and radio buttons</a></li>
+			<li><a href="http://unsplash.com/" target="_blank">Slider images from unsplash.com</a></li>
+			<li><a href="http://adamwhitcroft.com/batch/" target="_blank">Batch icons</a></li>
+			<li><a href="http://www.google.com/fonts/specimen/Changa+One" target="_blank">Changa One font</a></li>
+			<li><a href="http://www.google.com/fonts/specimen/Ubuntu" target="_blank">Ubuntu font</a></li>
+		</ul>
+
+		<hr>
+
+		<h3 id="credits"><strong>7) Changelog</strong> - <a href="#top">top</a></h3>
+
+		<p><strong>2017 August 14 - Version 1.3</strong></p>
+
+		<ul>
+			<li>Bugfix: Bugs of HTML structure and CSS styles have been fixed.</li>        
+		</ul>
+
+		<hr>
+			
+		<p class="append-bottom alt large"><strong>BestWebHolding</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
