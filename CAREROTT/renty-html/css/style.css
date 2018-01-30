@@ -831,7 +831,6 @@ a.sign_button {
 	position: relative;
 	z-index: 10;
 	width: 455px;
-	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
 }
 .left-slider #slider-post .post {
 	margin-left: 16px;
@@ -856,23 +855,23 @@ a.sign_button {
 #slider-post .entry-header h3 {
 	font-size: 36px;
 	line-height: 42px;
-	color: #fff;
+	color: #282f37;
 	margin-bottom: 5px;
 }
 #slider-post .entry-content {
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: lighter;
-	color: #ecebeb;
+	color: #282f37;
 }
 #slider-post .entry-meta {
-	color: #ecebeb;
+	color: #282f37;
 	opacity: 0.5;
 	margin: 8px;
 	font-size: 13px;
 }
 #slider-post .entry-meta a {
-	color: #ecebeb;
+	color: #282f37;
 }
 #slider-post .entry-meta a:before {
 	content: url(../images/learn-more-slider.png);
@@ -1289,8 +1288,8 @@ form div.disabled {
 	margin-bottom: 23px;
 }
 .sidebar-left {
-	float: left;
-	width: 33%;
+	margin-top: 50px;
+	width: 100%;
 }
 .sidebar-middle {
 	float: left;
