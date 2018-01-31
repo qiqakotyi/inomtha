@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
-		<title>Renty - Home</title>
+		<title>Renty - FAQ</title>
 		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +12,7 @@
 		<link rel="stylesheet" id="stylesheet-ie" href="css/css_ie.css" type="text/css" media="all" />
 		<![endif]-->
 	</head>
-	<body class="right-slider one-column">
+	<body class="page page-two-column no-main-form">
 		<div id="conteiner">
 			<div id="branding">
 				<div id="branding-content">
@@ -46,11 +46,11 @@
 							<li class="menu-close">
 								<span>&#10006;</span>
 							</li>
-							<li class="current_page_item menu-item-has-children">
+							<li class="menu-item-has-children">
 								<a href="01-home-v1.html" title="">Home</a>
 								<ul class="children">
 									<li><a href="01-home-v1.html" title="">Home v.1</a></li>
-									<li class="current_page_item"><a href="02-home-v2.html" title="">Home v.2</a></li>
+									<li><a href="02-home-v2.html" title="">Home v.2</a></li>
 									<li><a href="03-home-v3.html" title="">Home v.3</a></li>
 								</ul>
 							</li>
@@ -63,7 +63,7 @@
 								</ul>
 							</li>
 							<li><a href="07-shortcodes.html" title="">Shortcodes</a></li>
-							<li><a href="10-faq.html" title="">FAQ</a></li>
+							<li class="current_page_item"><a href="10-faq.html" title="">FAQ</a></li>
 						</ul>
 					</div><!-- .access -->
 					<div class="member">
@@ -73,142 +73,90 @@
 				</div><!-- #branding-content -->
 				<div class="clear"></div>
 			</div><!-- #branding -->
-			<div id="slider">
-				<div id="slider-img">
-					<ul class="slides">
-						<li><img src="http://placehold.it/2000x1080" alt="" /></li>
-						<li><img src="http://placehold.it/2000x1080" alt="" /></li>
-						<li><img src="http://placehold.it/2000x1080" alt="" /></li>
-						<div id="slider-pattern"></div>
-					</ul>
-				</div>
-				<div id="slider-content">
-					<div id="slider-post">
-						<div class="post">
-								<div class="entry-header">
-									<h3 class="entry-format">Great car hire deals.</h3>
-								</div>
-								<div class="entry-content">Phasellus eget ultricies libero. Sed dolor turpis, malesuada vitae cursus a, auctor semper neque.</div>
-								<div class="entry-meta"><a href="#" title="">Learn more</a></div>
-						</div>
-						<div id="slider-front-img">
-							<img src="http://placehold.it/452x183" alt="" />
-						</div>
-					</div>
-					<form id="slider-form" class="main-form" action="04-choose-car.html">
-						<div class="main_form_navigation">
-							<div id="book_car" class="title-form current"><a href="#" title="">Book a Car</a></div>
-							<div id="manage_reservation" class="title-form back"><a href="#" title="">Manage Reservation</a></div>
-						</div>
-						<div id="book_car_content" class="content-form ">
-							<div class="location-block">
-								<div class="form-block location">Location</div>
-								<div class="form-block airport_codes"><a href="#" title="">Airport codes</a></div>
-								<input class="location" type="text" value="" placeholder="Enter airport, city or zip code" name="location"/>
-								<input id="location-checkbox" type="checkbox" class="styled" name="checkbox_location" value="1"/>
-								<label for="location-checkbox"> Return at different location</label>
-							</div>
-							<div class="location-block return_location">
-								<div class="form-block location">Return location</div>
-								<input class="location" type="text" value="" placeholder="Enter airport, city or zip code" name="return_location"/>
-							</div>
-							<div class="form-block pick-up">
-								<h4>Pick-up date</h4>
-								<input class="datepicker" type="date" value="" name="data_from"/>
-								<input class="time-select" type="time" size="5" value="" name="time_from"/>
-								<div class="clear"></div>
-							</div>
-							<div class="form-block drop-off">
-								<h4>Drop-off date</h4>
-								<input class="datepicker" type="date" name="data_to" value=""/>
-								<input class="time-select" type="time" size="5" value="" name="time_to"/>
-								<div class="clear"></div>
-							</div>
-							<div class="form-block car-type">
-								<h4>Car type</h4>
-								<div class="car-type-select">
-									<select class="select" name="select_cartype"> 
-										<option selected="selected" >Standard</option>
-										<option>Mini</option>
-									</select>
-								</div>
-							</div>
-							<div class="form-block form-submit">
-								<input class="orange_button form-continue" type="submit" value="Continue"/>
-							</div>
-							<div class="clear"></div>
-						</div>
-						<div id="manage_reservation_content"  class="content-form hidden">
-							<div class="location-block">
-								<div class="form-block location">Location</div>
-								<div class="form-block airport_codes"><a href="#" title="">Airport codes</a></div>
-								<input class="location" type="text" value="" placeholder="Enter airport, city or zip code" name="location_1"/>
-								<input id="location-checkbox-1" type="checkbox" class="styled" name="checkbox_location_1" value="1"/>
-								<label for="location-checkbox-1"> Return at different location</label>
-							</div>
-							<div class="location-block return_location">
-								<div class="form-block location">Return location</div>
-								<input class="location" type="text" value="" placeholder="Enter airport, city or zip code" name="return_location_1"/>
-							</div>
-							<div class="form-block pick-up">
-								<h4>Pick-up date</h4>
-								<input class="datepicker" type="date" value="" name="data_from_1"/>
-								<input class="time-select" type="time" size="5" value="" name="time_from_1"/>
-								<div class="clear"></div>
-							</div>
-							<div class="form-block drop-off">
-								<h4>Drop-off date</h4>
-								<input class="datepicker" type="date"  name="data_to_1"/>
-								<input class="time-select" type="time" size="5" value="" name="time_to_1"/>
-								<div class="clear"></div>
-							</div>
-							<div class="form-block car-type">
-								<h4>Car type</h4>
-								<div class="car-type-select">
-									<select class="select" name="select_cartype_1"> 
-										<option selected="selected" >Standard</option>
-										<option>Mini</option>
-									</select>
-								</div>
-							</div>
-							<div class="form-block form-submit">
-								<input class="orange_button form-continue" type="submit" value="Continue"/>
-							</div>
-							<div class="clear"></div>
-						</div>
-						<div class="clear"></div>
-					</form>
-					<div class="clear"></div>
-				</div>
-			</div><!-- #slider -->
 			<div id="main">
 				<div id="primary">
-					<div id="content">
-						<div class="post">
-							<div class="entry-header">
-								<h3 class="entry-format">We are leading car rental agency with 300,000 Happy Customers.</h3>
+					<aside id="secondary" class="sidebar-left">
+						<div class="widget faq_nav">
+							<h3 class="widget-title">
+								<img src="images/list_navigation.png" alt="" />
+								Navigation
+							</h3>
+							<ul>
+								<li class="odd current"><a href="#" title="">Help</a></li>
+								<li class="even"><a href="#" title="">Terms &amp; Conditions</a></li>
+								<li class="odd"><a href="#" title="">About</a></li>
+								<li class="even"><a href="#" title="">Contact Us</a></li>
+							</ul>
+						</div>
+						<div class="widget widget-advertising">
+							<a href="#" title=""><img src="images/180x100" alt="" /></a>
+							<h4 class="widget-title">Book Sport Cars</h4>
+							<div class="widget-content">Aenean auctor, nibh sit amet viverra facilisis lectus libero.</div>
+						</div>
+					</aside>
+					<div id="content" class="sidebar-middle">
+						<div class="widget main-widget faq-widget">
+							<div class="widget-title">
+								<div>
+									<img src="images/list.png" alt="" />
+									Help
+								</div>
+								<div class="clear"></div>
 							</div>
-							<div class="entry-content">
-								Morbi orci ante, consectetur id vestibulum quis, suscipit eu eros. Duis non egestas dolor. Duis non volutpat leo. Aliquam nisi eros, accumsan non gravida vitae, ultrices eu eros. Phasellus sagittis mattis tristique.
+							<h4>FAQ</h4>
+							<div class="widget-content widget-note">
+								<div class="main-block">
+									<div class="details">
+										<div class="view-details">[+] Lorem ipsum dolor sit amet, consectetur adipiscing elit?</div>
+										<div class="close-details">[-] Lorem ipsum dolor sit amet, consectetur adipiscing elit?</div>
+									</div>
+									<p class="details-more">Ut condimentum eros sit amet tortor aliquet sed vehicula urna sodales. Curabitur vitae lectus vitae felis dignissim euismod. Morbi mattis laoreet dui sed dapibus. Maecenas leo augue, auctor quis auctor quis, lacinia non odio. Phasellus accumsan lobortis risus at egestas. Integer sed lectus id dolor euismod sollicitudin.</p>
+								</div>
+								<div class="main-block">
+									<div class="details">
+										<div class="view-details">[+] Maecenas urna tortor, consequat porttitor hendrerit?</div>
+										<div class="close-details">[-] Maecenas urna tortor, consequat porttitor hendrerit?</div>
+									</div>
+									<p class="details-more">Ut condimentum eros sit amet tortor aliquet sed vehicula urna sodales. Curabitur vitae lectus vitae felis dignissim euismod. Morbi mattis laoreet dui sed dapibus. Maecenas leo augue, auctor quis auctor quis, lacinia non odio. Phasellus accumsan lobortis risus at egestas. Integer sed lectus id dolor euismod sollicitudin.</p>
+								</div>
+								<div class="main-block">
+									<div class="details">
+										<div class="view-details">[+] Ut condimentum eros sit amet tortor aliquet?</div>
+										<div class="close-details">[-] Ut condimentum eros sit amet tortor aliquet?</div>
+									</div>
+									<p class="details-more">Ut condimentum eros sit amet tortor aliquet sed vehicula urna sodales. Curabitur vitae lectus vitae felis dignissim euismod. Morbi mattis laoreet dui sed dapibus. Maecenas leo augue, auctor quis auctor quis, lacinia non odio. Phasellus accumsan lobortis risus at egestas. Integer sed lectus id dolor euismod sollicitudin.</p>
+								</div>
+								<div class="main-block">
+									<div class="details">
+										<div class="view-details">[+] Donec neque purus, tincidunt eu?</div>
+										<div class="close-details">[-] Donec neque purus, tincidunt eu?</div>
+									</div>
+									<p class="details-more">Ut condimentum eros sit amet tortor aliquet sed vehicula urna sodales. Curabitur vitae lectus vitae felis dignissim euismod. Morbi mattis laoreet dui sed dapibus. Maecenas leo augue, auctor quis auctor quis, lacinia non odio. Phasellus accumsan lobortis risus at egestas. Integer sed lectus id dolor euismod sollicitudin.</p>
+								</div>
+								<div class="main-block">
+									<div class="details">
+										<div class="view-details">[+] Etiam lacus felis, ullamcorper vitae sollicitudin nec?</div>
+										<div class="close-details">[-] Etiam lacus felis, ullamcorper vitae sollicitudin nec?</div>
+									</div>
+									<p class="details-more">Ut condimentum eros sit amet tortor aliquet sed vehicula urna sodales. Curabitur vitae lectus vitae felis dignissim euismod. Morbi mattis laoreet dui sed dapibus. Maecenas leo augue, auctor quis auctor quis, lacinia non odio. Phasellus accumsan lobortis risus at egestas. Integer sed lectus id dolor euismod sollicitudin.</p>
+								</div>
+								<div class="main-block">
+									<div class="details">
+										<div class="view-details">[+] Nunc ut lectus at risus pulvinar faucibus id ac ligula?</div>
+										<div class="close-details">[-] Nunc ut lectus at risus pulvinar faucibus id ac ligula?</div>
+									</div>
+									<p class="details-more">Ut condimentum eros sit amet tortor aliquet sed vehicula urna sodales. Curabitur vitae lectus vitae felis dignissim euismod. Morbi mattis laoreet dui sed dapibus. Maecenas leo augue, auctor quis auctor quis, lacinia non odio. Phasellus accumsan lobortis risus at egestas. Integer sed lectus id dolor euismod sollicitudin.</p>
+								</div>
+								<div class="main-block">
+									<div class="details">
+										<div class="view-details">[+] Nunc ut lectus at risus pulvinar faucibus id ac ligula?</div>
+										<div class="close-details">[-] Nunc ut lectus at risus pulvinar faucibus id ac ligula?</div>
+									</div>
+									<p class="details-more">Ut condimentum eros sit amet tortor aliquet sed vehicula urna sodales. Curabitur vitae lectus vitae felis dignissim euismod. Morbi mattis laoreet dui sed dapibus. Maecenas leo augue, auctor quis auctor quis, lacinia non odio. Phasellus accumsan lobortis risus at egestas. Integer sed lectus id dolor euismod sollicitudin.</p>
+								</div>
 							</div>
-							<div class="entry-meta"><a href="#" title="">Learn more</a></div>
 						</div>
 					</div>
-					<aside id="secondary" class="features">
-						<div class="feature-single">
-							<img class="feature-title-img" src="images/2-icon.png" alt="" /><div class="feature-title">Dedicated customer support</div>
-							<div>Praesent tempus egestas blandit. Nunc euismod volutpat ultrices. Nam fermentum nibh eget mi vehicula dictum.</div>
-						</div>
-						<div class="feature-single">
-							<img class="feature-title-img" src="images/1-icon.png" alt="" /><div class="feature-title">Special low rates on car booking</div>
-							<div>Nunc ut nibh enim, id dapibus quam. Mauris id est at diam rutrum ultricies. Vivamus et dolor velit. Nam congue blandit nulla sed tincidunt.</div>
-						</div>
-						<div class="feature-single">
-							<img class="feature-title-img" src="images/3-icon.png" alt="" /><div class="feature-title">Manage your booking online</div>
-							<div>Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</div>
-						</div>
-						<div class="clear"></div>
-					</aside>
 					<div class="clear"></div>
 				</div>
 				<div id="sign_up_conteiner">
@@ -279,21 +227,21 @@
 							</div>
 							<div class="social-plugins">
 								<div class="fcbk_like">
-									<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.bestwebsoft.com&amp;locale=en_US&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=true&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21" style="border-width:0; border:none; overflow:hidden; width:110px; height:21px; background-color: transparent;"></iframe>
+									<!-- <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.bestwebsoft.com&amp;locale=en_US&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=true&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21" style="border-width:0; border:none; overflow:hidden; width:110px; height:21px; background-color: transparent;"></iframe> -->
 								</div>
 								<div class="twitter_like">
-									<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+									<!-- <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
 									<script type="text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-									</script>
+									</script> -->
 								</div>
 								<div class="google_plus_one">
 									<div class="g-plusone" data-size="medium"></div>
 									<script type="text/javascript">
-										(function() {
-											var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-											po.src = 'https://apis.google.com/js/plusone.js';
-											var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-										})();
+										// (function() {
+										// 	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+										// 	po.src = 'https://apis.google.com/js/plusone.js';
+										// 	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+										// })();
 									</script>
 								</div>
 							</div>
@@ -382,9 +330,7 @@
 		<script type="text/javascript" src="js/placeholder_ie.js"></script>
 		<![endif]-->
 		<script type="text/javascript" src="js/custom-form-elements.js"></script>
-		<script type="text/javascript" src="js/jquery.meio.mask.js"></script>
 		<script type="text/javascript" src="js/jquery.selectbox-0.2.min.js"></script>
-		<script type="text/javascript" src="js/jquery.blueberry.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>
