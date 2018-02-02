@@ -1,341 +1,227 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<title>Renty - Shortcodes</title>
-		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/jquery-ui.css" type="text/css" media="all" />
-		<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-		<link rel="stylesheet" href="css/jquery.slider.min.css" />
-		<!--[if IE]>
+
+<head>
+	<title>Linomtha</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/jquery-ui.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/jquery.slider.min.css" />
+	<link rel="stylesheet" href="css/contact.css" type="text/css" media="all" />
+	<!--[if IE]>
 		<script type="text/javascript" src="js/html5.js"></script>
 		<link rel="stylesheet" id="stylesheet-ie" href="css/css_ie.css" type="text/css" media="all" />
 		<![endif]-->
-	</head>
-	<body class="page no-main-form">
-		<div id="conteiner">
-			<div id="branding">
-				<div id="branding-content">
-					<div class="menus">
-						<div class="language">
-							<select class="select" name="select_language"> 
-								<option>English</option>
-								<option selected="selected">French</option>
-							</select>
-						</div>	
-						<div class="country">
-							<select class="select" name="select_country"> 
-								<option selected="selected">Choose Country</option>
-								<option>USA</option>
-								<option>England</option>
-							</select>
-						</div>
-					</div>
-					<div class="title-content">
-						<a href="01-home-v1.html" title="">
-							<img class="site-logo" src="images/thumb.png" alt="" />
-							<h1 class="site-title">
-								Renty
-							</h1>
-						</a>
-					</div>
-					<div class="access-content">
-						<label for="menu-icon" class="menu-icon"><img src="images/menu.png" alt="menu" /></label>
-						<input type="checkbox" id="menu-icon" value="1" />
-						<ul>
-							<li class="menu-close">
-								<span>&#10006;</span>
-							</li>
-							<li class="menu-item-has-children">
-								<a href="01-home-v1.html" title="">Home</a>
-							</li>
-							<li><a href="07-shortcodes.html" title="">Contact us</a></li>
-							<li><a href="10-faq.html" title="">Terms &amp; Conditions</a></li>
-						</ul>
-					</div><!-- .access -->
-					<div class="member">
-						<span class="sign_in"><a class="sign_button tab_link_button" href="#sign_in" title="">Sign in</a></span>
-						<span class="register"><a class="sign_button tab_link_button" href="#register" title="">Register</a></span>
-					</div>
-				</div><!-- #branding-content -->
-				<div class="clear"></div>
-			</div><!-- #branding -->
-			<div id="main">
-				<div id="primary">
-					<div class="widget widget-shortcode">
-						<div class="widget-title">
-							<div>
-								<img src="images/list.png" alt="" />
-								Shortcodes
-							</div>
-							<div class="clear"></div>
-						</div>
-						<h4>Basic elements</h4>
-						<div class="widget-content widget-note">
-							<div class="shortcode_column">
-								<div>
-									<input class="shortcode_input" type="text" value="Input text" name="shortcode_input"/>
-								</div>
-								<div>
-									<input class="shortcode_input" type="text" value="" placeholder="Placeholder text" name="shortcode_input_placeholder"/>
-								</div>
-								<div>
-									<input class="shortcode_input shortcode_input_active" type="text" value="" placeholder="Placeholder text" name="shortcode_active_field"/>
-								</div>
-								<div>
-									<input class="shortcode_input shortcode_input_required" type="text" value="This field is required" placeholder="" name="shortcode_required_field"/>
-								</div>
-								<div class="shortcode_slider">
-									<input class="shortcode_range" value="2.4;4.1" name="shortcode_range" />
-								</div>
-								<div class="shortcode_single_slider">
-									<input class="shortcode_range" value="0;3.05" name="shortcode_single_range" />
-								</div>
-							</div>
-							<div class="shortcode_column">
-								<div>
-									<input class="shortcode_button blue_button" name="blue_button" type="submit" value="Button" />
-								</div>
-								<div>
-									<input class="shortcode_button orange_button" name="orange_button" type="submit" value="Button" />
-								</div>
-								<div>
-									<input class="shortcode_button green_button" name="green_button" type="submit" value="Button" />
-								</div>
-								<div>
-									<input class="shortcode_button grey_button" name="grey_button" type="submit" value="Button" />
-								</div>
-								<div class="shortcode_rating">
-									<div class="star_rating"></div>	
-									<div class="star_rating"></div>
-									<div class="star_rating"></div>
-									<div class="star_rating star_half"></div>
-									<div class="star_rating star_empty"></div>
-									<div class="clear"></div>
-								</div>
-								<div class="shortcode_math">
-									<div><img src="images/math_minus.png" alt="" /></div>
-									<div><img src="images/math_plus.png" alt="" /></div>
-									<div><img src="images/math_multiplication.png" alt="" /></div>
-									<div><img src="images/math_equally.png" alt="" /></div>
-								</div>	
-								<div class="clear"></div>
-							</div>
-							<div class="shortcode_column">
-								<select class="select shortcode-select" name="shortcode_select_1">
-									<option>Choose option</option> 
-									<option>Choose option</option>
-								</select>
-								<select class="select shortcode-select" name="shortcode_select_2">
-									<option>Choose option</option> 
-									<option>Choose option</option>
-								</select>
-								<select class="select shortcode-select" name="shortcode_select_3">
-									<option disabled="disabled">Option 1</option> 
-									<option>Option 1</option>
-									<option>Option 1</option>
-									<option>Option 1</option>
-								</select>
-							</div>
-							<div class="shortcode_column last_child">
-								<div class="shortcode_checkbox">
-									<input checked="checked" type="checkbox" class="styled" name="shortcode_checkbox_checked" value="1" />
-									<input type="checkbox" class="styled" name="shortcode_checkbox_hover" value="1" />
-									<input type="checkbox" class="styled" name="shortcode_checkbox_unchecked" value="1" />
-									<div class="clear"></div>
-								</div>
-								<div class="shortcode_radio">
-									<input checked="checked" type="radio" class="styled" name="shortcode_radio" value="1" />
-									<input type="radio" class="styled" name="shortcode_radio" value="1" />
-									<input type="radio" class="styled" name="shortcode_radio" value="1" />
-									<div class="clear"></div>
-								</div>
-								<div class="shortcode_view">
-									<div id="thumb-icon" class="view_div"><img src="images/thumb-icon.png" alt="" /></div>	
-									<div id="list-icon" class="view_div"><img src="images/list-icon.png" alt="" /></div>
-									<div id="column-icon" class="view_div"><img src="images/column-icon.png" alt="" /></div>
-									<div id="coverflow-icon" class="view_div"><img src="images/coverflow-icon.png" alt="" /></div>
-									<div class="clear"></div>
-								</div>
-							</div>
-							<div class="clear"></div>
-						</div>
-					</div>
-					<div id="sign_up_conteiner">
-						<form action="#" id="sign_up">
-							<div class="sign_up_text">
-								Signup for our email to celebrate great specials 
-							</div>
-							<div class="sign_up_form">
-								<input id="sign_up_name" type="text" value="" placeholder="Name" />
-								<input id="sign_up_email" type="email" value="" placeholder="Email"/>
-								<input class="orange_button" type="submit" value="Signup"/>
-								<div class="clear"></div>
-							</div>
-							<div class="clear"></div>
-						</form>	
-					</div>
+</head>
+
+<body class="page no-main-form contact-us">
+	<div id="conteiner">
+		<div id="branding">
+			<div id="branding-content">
+				
+				<div class="title-content">
+					<a href="01-home-v1.html" title="">
+						<img class="site-logo" src="images/logo.png" alt="" />
+						<h1 class="site-title">
+						</h1>
+					</a>
+				</div>
+				<div class="access-content">
+					<label for="menu-icon" class="menu-icon">
+						<img src="images/menu.png" alt="menu" />
+					</label>
+					<input type="checkbox" id="menu-icon" value="1" />
+					<ul>
+						<li class="menu-close">
+							<span>&#10006;</span>
+						</li>
+						<li class="menu-item-has-children">
+							<a href="01-home-v1.html" title="">Home</a>
+						</li>
+						<li>
+							<a href="07-shortcodes.html" title="">Contact us</a>
+						</li>
+						<li><a href="terms.html" title="">Terms &amp; Conditions</a></li>
+					</ul>
+				</div>
+				<!-- .access -->
+				<div class="member">
+					<span class="sign_in">
+						<a class="sign_button tab_link_button" href="#sign_in" title="">Sign in</a>
+					</span>
+					<span class="register">
+						<a class="sign_button tab_link_button" href="#register" title="">Register</a>
+					</span>
 				</div>
 			</div>
+			<!-- #branding-content -->
 			<div class="clear"></div>
-			<footer id="footer">
-				<div id="footer-menu">
-					<div class="footer-content">
-						<div class="footer-navbar">
-							<div class="footer-nav">
-								<h3 class="widget-title">Renty</h3>
-								<ul>
-									<li><a href="01-home-v1.html" title="">Home</a></li>
-									<li><a href="#" title="">Privacy</a></li>
-									<li><a href="#" title="">Services</a></li>
-									<li><a href="#" title="">Partners</a></li>
-									<li><a href="#" title="">News</a></li>
-								</ul>
-							</div>
-							<div class="footer-nav">
-								<h3 class="widget-title">About</h3>
-								<ul>
-									<li><a href="#" title="">Latest News</a></li>
-									<li><a href="#" title="">Press Releases</a></li>
-									<li><a href="#" title="">Careers</a></li>
-									<li><a href="#" title="">Terms of Use</a></li>
-								</ul>
-							</div>
-							<div class="footer-nav">
-								<h3 class="widget-title">Support</h3>
-								<ul>
-									<li><a href="#" title="">Contact Us</a></li>
-									<li><a href="#" title="">Find Your Invoice</a></li>
-									<li><a href="10-faq.html" title="">FAQ</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="widget-area">
-							<div class="recent_tweets footer-widget-single">
-								<h3>Recent tweets</h3>
-								<div class="recent_tweets_content"><a href="#" title="">@bestwebsoft</a> velit, vitae tincidunt orci. Proin vitae auctor lectus.</div>
-								<div class="recent_tweets_url"><a href="#" title="">https://bestwebsoft.com</a></div>
-								<div class="recent_tweets_time">posted 2 days ago</div>
-							</div>
-						</div>
-						<div class="custom-info footer-widget-single">
-							<div class="support">
-								<img src="images/support-icon.png" alt="" />
-								<div>
-									<div class="title">Online support</div>
-									<div class="phone">+1 (555) 555 - 28 - 28</div>
-									<div class="email"><a href="#" title="">support@bestwebsoft.zendesk.com</a></div>
-								</div>
-								<div class="clear"></div>
-							</div>
-							<div class="social-plugins">
-								<div class="fcbk_like">
-									<!-- <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.bestwebsoft.com&amp;locale=en_US&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=true&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21" style="border-width:0; border:none; overflow:hidden; width:110px; height:21px; background-color: transparent;"></iframe> -->
-								</div>
-								<div class="twitter_like">
-									<!-- <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
-									<script type="text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-									</script> -->
-								</div>
-								<div class="google_plus_one">
-									<div class="g-plusone" data-size="medium"></div>
-									<script type="text/javascript">
-										// (function() {
-										// 	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-										// 	po.src = 'https://apis.google.com/js/plusone.js';
-										// 	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-										// })();
-									</script>
-								</div>
-							</div>
+		</div>
+		<!-- #branding -->
+		<div id="main">
+			<div id="primary">
+				<div class="widget widget-shortcode">
+					<div class="widget-title">
+						<div>
+							<img src="images/list.png" alt="" /> Get in touch with us
 						</div>
 						<div class="clear"></div>
-					</div><!-- .footer-content -->
+					</div>
+
+					<div id="page-wrap">
+						<div id="contact-area">
+
+							<form method="post" action="contactengine.php">
+								<label for="Name">Name:</label>
+								<input type="text" name="Name" id="Name" />
+
+								<label for="City">City:</label>
+								<input type="text" name="City" id="City" />
+
+								<label for="Email">Email:</label>
+								<input type="text" name="Email" id="Email" />
+
+								<label for="Message">Message:</label>
+								<br />
+								<textarea name="Message" rows="20" cols="20" id="Message"></textarea>
+
+								<input type="submit" name="submit" value="Submit" class="submit-button" />
+							</form>
+
+							<div style="clear: both;"></div>
+						</div>
+
+					</div>
 				</div>
-				<div id="footer-content">
-					<img class="site-logo" src="images/thumb.png" alt="" />
-					<h1 class="site-title">Renty</h1>
-					<div class="company-name">Renty Company Inc,120 CA 15th Avenue - Suite 214</div>
-				</div><!-- #footer-content -->
-			</footer><!--end:footer-->
-		</div><!--end:conteiner-->
-		<div id="overlay_block"></div>
-		<div class="admin-form-content sign_register_block">
-			<div class="admin-form-block">
-				<form class="main-form admin-form" action="#">
-					<div class="main_form_navigation">
-						<div id="tab_register" class="title-form back"><span class="register"><a href="#register" title="">Register</a></span></div>
-						<div id="tab_sign_in" class="title-form current"><span class="sign_in"><a href="#sign_in" title="">Sign In</a></span></div>	
-					</div>
-					<div id="tab_sign_in_content" class="content-form">
-						<div>
-							<input id="sign_in_email" class="input_placeholder" type="email" value="" placeholder="Email address" name="sign_in_email"/>
-						</div>
-						<div>
-							<input id="sign_in_pass" type="password" value="" name="sign_in_pass"/>
-						</div>
-						<div>
-							<input id="remember_me_checkbox" type="checkbox" class="styled" name="remember_me" value="1"/>
-							<label for="remember_me_checkbox"> Remember me next time</label>
-						</div>
-						<input class="admin-form-submit orange_button" type="submit" value="Continue"/>
-						<div class="admin_form_link">
-							<span class="forgot_passwd"><a class="tab_link_button" href="#forgot_passwd" title="">Forgot password?</a></span>
-						</div>
-					</div>
-					<div id="tab_register_content"  class="content-form hidden">
-						<div>
-							<input id="register_email" class="input_placeholder" type="email" value="" placeholder="Email address" name="register_email"/>
-						</div>
-						<div>
-							<input id="register_name" type="text" value="" name="register_name"/>
-						</div>
-						<div>
-							<input id="register_remember_me_checkbox" type="checkbox" class="styled" name="remember_me" value="1"/>
-							<label for="register_remember_me_checkbox"> Remember me next time</label>
-						</div>
-						<input class="admin-form-submit orange_button" type="submit" value="Continue"/>
-						<div class="admin_form_link">
-							<span class="sign_in"><a class="tab_link_button" href="#sign_in" title="">Already registered?</a></span>
-						</div>
-					</div>
-					<div class="clear"></div>
-				</form>
-				<div class="admin-form-separator">
-					<div class="separator">Or</div>
-				</div>
-				<input class="connect_fb" type="button" value="Connect With Facebook"/>
-				<input class="connect_twitter" type="button" value="Connect With Twitter"/>
 			</div>
 		</div>
-		<div class="admin-form-content forgot_passwd_block">
-			<div class="admin-form-block">
-				<form class="main-form admin-form" action="#">
-					<div class="main_form_navigation">
-						<div id="tab_forgot_passwd" class="title-form current">Forgot Password?</div>
-					</div>
-					<div id="tab_forgot_passwd_content" class="content-form">
-						<input id="forgot_pass_email" class="input_placeholder" type="email" value="" placeholder="Email address" name="forgot_pass_email"/>
-						<div id="forgot_pass_text"> We will send you the password in few minutes.</div>
-						<input class="admin-form-submit orange_button" type="submit" value="Continue"/>
-						<div class="admin_form_link">
-							<span class="sign_in"><a class="tab_link_button" href="#sign_in" title="">Sign In</a></span>
+		<div class="clear"></div>
+		<footer id="footer">
+			<div id="footer-menu">
+				<div class="footer-content">
+					<div class="footer-navbar">
+						<a href="terms.html" title="">Terms &amp; Conditions</a>
+						<div class="footer-nav">
+							
+						</div>
+						<div class="footer-nav">
+							
+						</div>
+						<div class="footer-nav">
+							
 						</div>
 					</div>
+					<div class="widget-area">
+						
+					</div>
 					<div class="clear"></div>
-				</form>
+				</div>
+				<!-- .footer-content -->
 			</div>
+			<div id="footer-content">
+				<h1 class="site-title">Linomtha</h1>
+			</div>
+			<!-- #footer-content -->
+		</footer>
+		<!--end:footer-->
+	</div>
+	<!--end:conteiner-->
+	<div id="overlay_block"></div>
+	<div class="admin-form-content sign_register_block">
+		<div class="admin-form-block">
+			<form class="main-form admin-form" action="#">
+				<div class="main_form_navigation">
+					<div id="tab_register" class="title-form back">
+						<span class="register">
+							<a href="#register" title="">Register</a>
+						</span>
+					</div>
+					<div id="tab_sign_in" class="title-form current">
+						<span class="sign_in">
+							<a href="#sign_in" title="">Sign In</a>
+						</span>
+					</div>
+				</div>
+				<div id="tab_sign_in_content" class="content-form">
+					<div>
+						<input id="sign_in_email" class="input_placeholder" type="email" value="" placeholder="Email address" name="sign_in_email"
+						/>
+					</div>
+					<div>
+						<input id="sign_in_pass" type="password" value="" name="sign_in_pass" />
+					</div>
+					<div>
+						<input id="remember_me_checkbox" type="checkbox" class="styled" name="remember_me" value="1" />
+						<label for="remember_me_checkbox"> Remember me next time</label>
+					</div>
+					<input class="admin-form-submit orange_button" type="submit" value="Continue" />
+					<div class="admin_form_link">
+						<span class="forgot_passwd">
+							<a class="tab_link_button" href="#forgot_passwd" title="">Forgot password?</a>
+						</span>
+					</div>
+				</div>
+				<div id="tab_register_content" class="content-form hidden">
+					<div>
+						<input id="register_email" class="input_placeholder" type="email" value="" placeholder="Email address" name="register_email"
+						/>
+					</div>
+					<div>
+						<input id="register_name" type="text" value="" name="register_name" />
+					</div>
+					<div>
+						<input id="register_remember_me_checkbox" type="checkbox" class="styled" name="remember_me" value="1" />
+						<label for="register_remember_me_checkbox"> Remember me next time</label>
+					</div>
+					<input class="admin-form-submit orange_button" type="submit" value="Continue" />
+					<div class="admin_form_link">
+						<span class="sign_in">
+							<a class="tab_link_button" href="#sign_in" title="">Already registered?</a>
+						</span>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</form>
+			<div class="admin-form-separator">
+				<div class="separator">Or</div>
+			</div>
+			<input class="connect_fb" type="button" value="Connect With Facebook" />
+			<input class="connect_twitter" type="button" value="Connect With Twitter" />
 		</div>
-		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-		<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-		<script type="text/javascript" src="js/jquery-ui.js"></script>
-		<!--[if IE]>
+	</div>
+	<div class="admin-form-content forgot_passwd_block">
+		<div class="admin-form-block">
+			<form class="main-form admin-form" action="#">
+				<div class="main_form_navigation">
+					<div id="tab_forgot_passwd" class="title-form current">Forgot Password?</div>
+				</div>
+				<div id="tab_forgot_passwd_content" class="content-form">
+					<input id="forgot_pass_email" class="input_placeholder" type="email" value="" placeholder="Email address" name="forgot_pass_email"
+					/>
+					<div id="forgot_pass_text"> We will send you the password in few minutes.</div>
+					<input class="admin-form-submit orange_button" type="submit" value="Continue" />
+					<div class="admin_form_link">
+						<span class="sign_in">
+							<a class="tab_link_button" href="#sign_in" title="">Sign In</a>
+						</span>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<!--[if IE]>
 		<script type="text/javascript" src="js/placeholder_ie.js"></script>
 		<![endif]-->
-		<script type="text/javascript" src="js/jquery.slider.min.js"></script>
-		<script type="text/javascript" src="js/custom-form-elements.js"></script>
-		<script type="text/javascript" src="js/jquery.selectbox-0.2.min.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
-	</body>
+	<script type="text/javascript" src="js/jquery.slider.min.js"></script>
+	<script type="text/javascript" src="js/custom-form-elements.js"></script>
+	<script type="text/javascript" src="js/jquery.selectbox-0.2.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+
 </html>

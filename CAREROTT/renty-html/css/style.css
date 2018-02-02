@@ -701,9 +701,10 @@ a.sign_button {
 }
 .no-main-form #main {
 	margin-top: 37px; 
+	margin-bottom: 50px;
 }
 .two-column #content {   
-	width: 300px;
+	width: 100%;
 	float: left;
 	margin-left: 2px;
 }
@@ -734,7 +735,14 @@ a.sign_button {
 	clear:both; 
 	margin: 0 auto;
 	position: relative;
+	width: 100%;
+	bottom: 0;
 	background: #f08643;
+}
+
+.page-two-column #footer,
+.no-main-form #footer{
+	position: fixed;
 }
 
 /* = Slider Elements -------------------------------- 
@@ -2239,7 +2247,7 @@ input.connect_twitter {
 	box-shadow: 0 1px 4px #ccc;
 }
 #footer-content {
-	margin: 0 auto;
+	margin: 20px auto;
 	max-width: 945px;
 	padding-bottom: 15px;
 	background: #f08643;
@@ -2568,6 +2576,17 @@ input.connect_twitter {
 	.one-column .features {
 		width: 768px;
 		margin: 0 auto;
+	}
+
+	#secondary:before ,
+	#secondary:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+	#secondary {
+		margin-top: 50px;
 	}
 	/* = Sidebar and widgets------ */
 	.sidebars-area {
